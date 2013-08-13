@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#ffe67700</color>
+    <color name="listitem_deal">#ffffffff</color>
+    <color name="no_fav_color">#88ffffff</color>
+    <color name="no_message_color">#88ffffff</color>
+    <color name="setting_title_color">#ffffffff</color>
+    <color name="about_text_color">#ffbebebe</color>
+    <color name="debug_mode_color">#ffffffff</color>
+    <color name="feedback_text_color">#ffffffff</color>
+    <color name="change_password_text_color">#ffbebebe</color>
+    <color name="tabbing_deal_detail_text_color">#ffbebebe</color>
+    <color name="no_review_text_color">#88ffffff</color>
+    <color name="login_text_color">#ffffffff</color>
+    <color name="registration_text_color">#ffffffff</color>
+    <color name="no_item_all_deal">#88ffffff</color>
+</resources>

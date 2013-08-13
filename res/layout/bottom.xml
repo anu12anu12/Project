@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@+id/BottomMenu" android:background="@drawable/grad_background" android:animationCache="false" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@+id/scroller" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/homeLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconHome" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_home" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_btn" />
+            </LinearLayout>
+             <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/listLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconList" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_list" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/list_btn" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/searchLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconSearch" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_search" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_btn" />
+            </LinearLayout>
+                       
+			<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/nearbyLayout" android:background="@drawable/background_state"  android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconNearby" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_nearby" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_btn" />
+            </LinearLayout>
+               <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/settingLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconSetting" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_setting" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_btn" />
+            </LinearLayout>            
+           
+			<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/aboutLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconAbout" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_about" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_btn" />
+            </LinearLayout>
+            
+
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/floorPlanLayout" android:background="@drawable/background_state" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconFloorPlan" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_floor" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/floorPlan_btn" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mallInfoLayout" android:background="@drawable/background_state" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconMallInfo" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_mall" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mallInfo_btn" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/inboxLayoutMenu" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconInbox" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_inbox" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inbox_btn" />
+            </LinearLayout>
+
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/favLayout" android:background="@drawable/background_state" android:clickable="true" android:layout_width="64.0dip" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iconFavorite" android:layout_width="57.0dip" android:layout_height="27.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/button_favorite" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fav_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@+id/navigation_left" android:layout_width="20.0dip" android:layout_height="30.0dip" android:src="@drawable/left_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/navigation_right" android:layout_width="20.0dip" android:layout_height="30.0dip" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

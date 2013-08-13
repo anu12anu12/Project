@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/DealFloorList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+    <ListView android:id="@+id/CouponFloorList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+    <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#88ffffff" android:gravity="center" android:id="@+id/NoDealFloorText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Deal" />
+    <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#88ffffff" android:gravity="center" android:id="@+id/NoCouponFloorText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Coupon" />
+    <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#88ffffff" android:gravity="center" android:id="@+id/NoCouponText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Coupon" />
+</FrameLayout>

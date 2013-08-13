@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/tab_all_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@+id/DealContentList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <ListView android:id="@+id/CouponContentList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <ListView android:id="@+id/FloorContentList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <ListView android:id="@+id/CategoryContentList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+     	<TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/no_item_all_deal" android:gravity="center" android:id="@+id/NoFloorContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Floor" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/no_item_all_deal" android:gravity="center" android:id="@+id/NoDealTextContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Deals" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/no_item_all_deal" android:gravity="center" android:id="@+id/NoCouponTextContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Coupons" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/no_item_all_deal" android:gravity="center" android:id="@+id/NoCategoryContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="No Category" />
+    </LinearLayout>
+</FrameLayout>

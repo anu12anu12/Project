@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewFlipper android:id="@+id/tapImageFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tap_layout1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="280.0dip">
+                <ImageView android:id="@+id/imagePreview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/deal_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tap_layout2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="280.0dip">
+                <com.inphosoft.inphoshop.android.layout.AspectRatioImageView android:id="@+id/imagePreview2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/deal_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tap_layout3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="280.0dip">
+                <com.inphosoft.inphoshop.android.layout.AspectRatioImageView android:id="@+id/imagePreview3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/deal_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tap_layout4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="280.0dip">
+                <com.inphosoft.inphoshop.android.layout.AspectRatioImageView android:id="@+id/imagePreview4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/deal_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tap_layout5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="280.0dip">
+                <ImageView android:id="@+id/imagePreview5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/deal_img" />
+            </LinearLayout>
+        </ViewFlipper>
+        <TextView android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tapClose" android:background="#ff000000" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="X" />
+    </RelativeLayout>
+</LinearLayout>

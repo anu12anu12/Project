@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rootLinearLayoutTabbingNearBy" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/tabbing_near_by_logo" android:layout_width="fill_parent" android:layout_alignParentTop="true" layout="@layout/logo" />
+    <include android:id="@+id/tabbing_near_by_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/bottom" />
+    <TabHost android:layout_gravity="center" android:id="@+id/tabhostNearBy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@+id/tabbing_near_by_bottom" android:layout_below="@+id/tabbing_near_by_logo">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayoutTabbingNearBy" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ListView android:id="@+id/DealList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+                <ListView android:id="@+id/CouponList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+                <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#88ffffff" android:gravity="center" android:id="@+id/NoDealText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip" android:text="No Deal" />
+                <RelativeLayout android:orientation="vertical" android:id="@+id/mainlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  >
+                    <com.google.android.maps.MapView android:id="@+id/mapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="@string/map_key" />
+                </RelativeLayout>
+            </FrameLayout>
+            <TabWidget android:gravity="bottom" android:layout_gravity="bottom" android:id="@android:id/tabs" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="#ff000000" />
+        </LinearLayout>
+    </TabHost>
+    
+</RelativeLayout>

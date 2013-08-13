@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/LinearLayoutOutletDetail" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/logo" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/LinearLayoutOutletInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+        <ImageView android:id="@+id/ImageViewDetailOutlet" android:padding="5.0dip" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/deal_img" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="left" android:id="@+id/textOutletMerchantInfo" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ImageAddress" android:paddingTop="5.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/addicon" />
+                <TextView android:gravity="left" android:id="@+id/textOutletLocation" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ImagePhone" android:paddingTop="3.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/telicon" />
+                <TextView android:gravity="left" android:id="@+id/textOutletPhone" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayoutDetailOutlet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="12.0dip" android:id="@+id/btnAddContact" android:background="@drawable/button_shape" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="Add to Contact" />
+            <Button android:textSize="12.0dip" android:id="@+id/btnCallContact" android:background="@drawable/button_shape" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="Call Store" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.maps.MapView android:id="@+id/mapOutletDetail" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="@string/map_key" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:textSize="12.0dip" android:id="@+id/getOutletDirection" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get Direction" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/bottom" />
+</LinearLayout>

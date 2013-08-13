@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/settings_logo" android:layout_width="fill_parent" android:layout_alignParentTop="true" layout="@layout/logo" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/setting_title_color" android:gravity="center_horizontal" android:id="@+id/settings_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/setting_btn" android:layout_below="@+id/settings_logo" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/settings_layout_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@+id/settings_title">
+        <Button android:id="@+id/settings_btn_change_pass" android:background="@drawable/button_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/change_password" />
+        <Button android:id="@+id/settings_btn_debug_mode" android:background="@drawable/button_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_mode" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/bottom" />
+</RelativeLayout>
