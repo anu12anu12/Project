@@ -2,7 +2,7 @@ package com.atspeedcorp.happyhours;
 
 import android.os.Bundle;
 
-public class SettingActivity extends BaseMapActivity {
+public class SettingActivity extends BaseScreenActivity {
 	
 	public void onCreate(Bundle paramBundle)
 	{

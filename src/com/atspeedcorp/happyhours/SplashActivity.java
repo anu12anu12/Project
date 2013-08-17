@@ -42,7 +42,7 @@ public class SplashActivity extends Activity {
 	
 	
 	private void startApp() {
-		Intent localIntent = new Intent(SplashActivity.this, SearchActivity.class);
+		Intent localIntent = new Intent(SplashActivity.this, MapOutletActivity.class);
         startActivity(localIntent);
         finish();
 
